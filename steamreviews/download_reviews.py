@@ -121,7 +121,7 @@ def get_steam_api_rate_limits():
     # Objective: return the rate limits of Steam API for reviews.
 
     rate_limits = {
-        "max_num_queries": 150,
+        "max_num_queries": 99000,
         "cooldown": (5 * 60) + 10,  # 5 minutes plus a cushion
         "cooldown_bad_gateway": 10,  # arbitrary value to tackle 502 Bad Gateway due to saturated servers (during sales)
     }
